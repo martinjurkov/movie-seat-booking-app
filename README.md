@@ -18,7 +18,7 @@ For this challenge, I used...
 Users should be able to:
 
  - by clicking on the title or picture see details about specific movie and movie trailer
- - by clicking on booking button be able to choose movie and seats by user's choice
+ - by clicking on booking button be able to choose movie and seats by his/her choice
 
 ## Things I Wish I Would Have Done
 
