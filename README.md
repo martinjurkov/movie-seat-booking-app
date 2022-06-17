@@ -26,4 +26,4 @@ Users should be able to:
 
 ## Links
  - Solution URL: <a href=https://github.com/martinjurkov/banking-app>GitHub</a>
- - Live Site URL: <a href=https://elaborate-sundae-045980.netlify.app/index.html/>Live</a>
+ - Live Site URL: <a href=https://ephemeral-medovik-ee8437.netlify.app/index.html/>Live</a>
