@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="img/perspective_matte.png"
+    />
+    <script defer src="script.js"></script>
+    <title>Movie Seat Booking</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Documentaries Evening Cinema</h1>
+    </header>
+
+    <main class="main">
+      <div class="movie-item">
+        <div class="popup-img" id="popup-1">
+          <img src="img/honeyland_small.jpg" alt="Honeland Image" />
+        </div>
+        <div class="preview">
+          <h2 class="preview__heading" id="heading-1">Honeyland</h2>
+          <div class="preview__info">
+            <button class="preview__info--btn">Documentary</button>
+            <button class="preview__info--btn">Drama</button>
+            <span class="preview__info--length">1h 29m</span>
+          </div>
+          <div class="preview__lang-tit">TR (TIT CZ)</div>
+          <p class="preview__about">
+            The last female bee-hunter in Europe must save the bees and return
+            the natural balance in Honeyland, when a family of nomadic
+            beekeepers invade her land and threaten her livelihood.
+          </p>
+          <button class="preview__btn-book">
+            <a href="booking.html">Book Ticket</a>
+          </button>
+        </div>
+      </div>
+
+      <div class="movie-item">
+        <div class="popup-img" id="popup-2">
+          <img src="img/Attenborough-film.jpeg" alt="Attenborough Image" />
+        </div>
+        <div class="preview">
+          <h2 class="preview__heading" id="heading-2">
+            David Attenborough: A Life on Our Planet
+          </h2>
+          <div class="preview__info">
+            <button class="preview__info--btn">Documentary</button>
+            <button class="preview__info--btn">Biography</button>
+            <span class="preview__info--length">1h 23m</span>
+          </div>
+          <div class="preview__lang-tit">EN (TIT CZ)</div>
+          <p class="preview__about">
+            One man has seen more of the natural world than any other. This
+            unique feature documentary is his witness statement.
+          </p>
+          <button class="preview__btn-book">
+            <a href="booking.html">Book Ticket</a>
+          </button>
+        </div>
+      </div>
+
+      <div class="movie-item">
+        <div class="popup-img" id="popup-3">
+          <img src="img/maradona.jpg" alt="Maradona Image" />
+        </div>
+        <div class="preview">
+          <h2 class="preview__heading" id="heading-3">Diego Maradona</h2>
+          <div class="preview__info">
+            <button class="preview__info--btn">Documentary</button>
+            <button class="preview__info--btn">Biography</button>
+            <span class="preview__info--length">2h 10m</span>
+          </div>
+          <div class="preview__lang-tit">EN (TIT CZ)</div>
+          <p class="preview__about">
+            Constructed from over 500 hours of never-before-seen footage, this
+            documentary centers on the career of celebrated football player
+            Diego Maradona, who played for S.S.C. Napoli in the 1980s.
+          </p>
+          <button class="preview__btn-book">
+            <a href="booking.html">Book Ticket</a>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <div class="modal hidden" id="modal-1">
+      <button class="modal__close-modal" id="close-1">&times;</button>
+      <iframe
+        class="modal__video"
+        src="https://www.youtube.com/embed/B27ORUHlp6E"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <div class="modal__info">
+        <p class="modal__info--text">
+          A woman utilizes ancient beekeeping traditions to cultivate honey in
+          the mountains of North Macedonia. When a neighboring family tries to
+          do the same, it becomes a source of tension as they disregard her
+          wisdom and advice.
+        </p>
+        <ul class="modal__info--list">
+          <li>
+            <p class="modal__info--list-top">Genre:</p>
+            <p class="modal__info--list-bottom">Documentary</p>
+          </li>
+          <li>
+            <p class="modal__info--list-top">Original language:</p>
+            <p class="modal__info--list-bottom">Turkish</p>
+          </li>
+          <li>
+            <p class="modal__info--list-top">Director:</p>
+            <p class="modal__info--list-bottom">
+              Ljubo Stefanov, Tamara Kotevska
+            </p>
+          </li>
+          <li>
+            <p class="modal__info--list-top">Producer:</p>
+            <p class="modal__info--list-bottom">
+              Ljubo Stefanov, Atanas Georgiev
+            </p>
+          </li>
+          <li>
+            <p class="modal__info--list-top">Runtime:</p>
+            <p class="modal__info--list-bottom">1h 29m</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="modal hidden" id="modal-2">
+      <button class="modal__close-modal" id="close-2">&times;</button>
+      <iframe
+        class="modal__video"
+        src="https://www.youtube.com/embed/64R2MYUt394"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <div class="modal__info">
+        <p class="modal__info--text">
+          David Attenborough discusses humanity's impact on nature and the
+          actions we can take to save the planet.
+        </p>
+        <ul class="modal__info--list">
+          <li>
+            <p class="modal__info--list-top">Genre:</p>
+            <p class="modal__info--list-bottom">Documentary</p>
+          </li>
+          <li>
+            <p class="modal__info--list-top">Original language:</p>
+            <p class="modal__info--list-bottom">English</p>
+          </li>
+          <li>
+            <p class="modal__info--list-top">Director:</p>
+            <p class="modal__info--list-bottom">
+              Alastair Fothergill, Jonnie Hughes, Keith Scholey
+            </p>
+          </li>
+          <li>
+            <p class="modal__info--list-top">Producer:</p>
+            <p class="modal__info--list-bottom">Jonnie Hughes</p>
+          </li>
+          <li>
+            <p class="modal__info--list-top">Runtime:</p>
+            <p class="modal__info--list-bottom">1h 23m</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="modal hidden" id="modal-3">
+      <button class="modal__close-modal" id="close-3">&times;</button>
+      <iframe
+        class="modal__video"
+        src="https://www.youtube.com/embed/Pmm7r4ynyIQ"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <div class="modal__info">
+        <p class="modal__info--text">
+          Through the lens of 500 hours of never-before-seen footage, this will
+          be the definitive feature documentary on the iconic soccer star
+          Maradona, a wild and unforgettable story of God-given talent, glory,
+          despair and betrayal, of corruption and ultimately redemption.
+        </p>
+        <ul class="modal__info--list">
+          <li>
+            <p class="modal__info--list-top">Genre:</p>
+            <p class="modal__info--list-bottom">Documentary</p>
+          </li>
+          <li>
+            <p class="modal__info--list-top">Original language:</p>
+            <p class="modal__info--list-bottom">English</p>
+          </li>
+          <li>
+            <p class="modal__info--list-top">Director:</p>
+            <p class="modal__info--list-bottom">Asif Kapadia</p>
+          </li>
+          <li>
+            <p class="modal__info--list-top">Producer:</p>
+            <p class="modal__info--list-bottom">James Gay-Rees, Paul Martin</p>
+          </li>
+          <li>
+            <p class="modal__info--list-top">Runtime:</p>
+            <p class="modal__info--list-bottom">2h 10m</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="overlay hidden" id="overlay"></div>
+  </body>
+</html>

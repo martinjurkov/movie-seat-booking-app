@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="img/perspective_matte.png"
+    />
+    <script defer src="book.js"></script>
+    <title>Booking Tickets</title>
+  </head>
+  <body class="container">
+    <span class="arrow-back">
+      <a href="index.html">&leftarrow;</a>
+    </span>
+    <div class="movie-container">
+      <label>Pick a movie:</label>
+      <select id="movie">
+        <option value="8">Honeyland (8 €)</option>
+        <option value="12">
+          David Attenborough: A Life on Our Planet (12 €)
+        </option>
+        <option value="10">Diego Maradona (10 €)</option>
+      </select>
+    </div>
+
+    <ul class="showcase">
+      <li>
+        <div class="showcase__seat"></div>
+        <small>N/A</small>
+      </li>
+
+      <li>
+        <div class="showcase__seat selected"></div>
+        <small>Selected</small>
+      </li>
+
+      <li>
+        <div class="showcase__seat occupied"></div>
+        <small>Occupied</small>
+      </li>
+    </ul>
+
+    <div class="cinema" id="cinema">
+      <div class="cinema__screen"></div>
+
+      <div class="cinema__row">
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+      </div>
+
+      <div class="cinema__row">
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat occupied"></div>
+        <div class="cinema__row--seat occupied"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+      </div>
+
+      <div class="cinema__row">
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat occupied"></div>
+        <div class="cinema__row--seat occupied"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+      </div>
+
+      <div class="cinema__row">
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+      </div>
+
+      <div class="cinema__row">
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat occupied"></div>
+        <div class="cinema__row--seat occupied"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+      </div>
+
+      <div class="cinema__row">
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat occupied"></div>
+        <div class="cinema__row--seat occupied"></div>
+        <div class="cinema__row--seat occupied"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+      </div>
+
+      <div class="cinema__row">
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+      </div>
+
+      <div class="cinema__row">
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+      </div>
+
+      <div class="cinema__row">
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+      </div>
+
+      <div class="cinema__row">
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+        <div class="cinema__row--seat"></div>
+      </div>
+
+      <p class="cinema__text">
+        You have selected <span id="count">0</span> seats for a price of
+        <span id="total">0</span> €
+      </p>
+
+      <button class="btn-book" id="btn-book">Book Now</button>
+    </div>
+
+    <div class="message hidden" id="message">
+      <div class="message__close" id="message-close">&times;</div>
+      <p class="message__text">Great! You have booked your tickets.</p>
+    </div>
+    <div class="message__overlay hidden" id="message-overlay"></div>
+  </body>
+</html>

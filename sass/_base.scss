@@ -1,0 +1,42 @@
+// COLOR VARIABLES
+$color-primary: #fc9416;
+$color-secondary: #242333;
+$color-tertiary: whitesmoke;
+
+*,
+b::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px/16px = 62.5% => 1rem = 10px
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  background-color: $color-tertiary;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+
+  background-color: $color-secondary;
+  color: #fff;
+  font-size: 1.5rem;
+}
